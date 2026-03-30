@@ -121,11 +121,11 @@ CONFIG = {
     "markov_threshold": 0.080,  # min |P(even|d) - 0.50| (calibrated)
 
     # ── Confluence ────────────────────────────────────────────────
-    "models_required":  3,      # of 4 directional models (after entropy gate)
+    "models_required":  4,      # of 4 directional models (after entropy gate)
 
     # ── Martingale (preserved from original) ──────────────────────
     "initial_stake":    0.35,
-    "martingale_add":   0.15,   # additive factor: new_stake = stake + stake*0.15
+    "martingale_add":   0.99,   # additive factor: new_stake = stake + stake*0.15
     "max_losses":       999,    # original had 999 (effectively unlimited)
 
     # ── Risk ──────────────────────────────────────────────────────
