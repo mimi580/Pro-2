@@ -99,7 +99,7 @@ CONFIG = {
 
     # ── Model 1: Z-Score ──────────────────────────────────────────
     "zscore_window":    30,     # digits
-    "zscore_threshold": 1.7,    # |Z| must exceed this
+    "zscore_threshold": 2.0,    # |Z| must exceed this
 
     # ── Model 2: Recency-Weighted Frequency ───────────────────────
     "rw_window":    40,         # digits
@@ -125,7 +125,7 @@ CONFIG = {
 
     # ── Martingale (preserved from original) ──────────────────────
     "initial_stake":    0.35,
-    "martingale_add":   0.99,   # additive factor: new_stake = stake + stake*0.15
+    "martingale_add":   0.31,   # additive factor: new_stake = stake + stake*0.15
     "max_losses":       999,    # original had 999 (effectively unlimited)
 
     # ── Risk ──────────────────────────────────────────────────────
